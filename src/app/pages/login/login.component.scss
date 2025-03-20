@@ -1,0 +1,78 @@
+.login {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+  }
+  
+  .login__titulo {
+    color: var(--cor-texto);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .login__input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: var(--cor-input);
+    color: var(--cor-placeholder);
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .login__input::placeholder {
+    color: var(--cor-placeholder);
+    opacity: 0.8;
+  }
+  
+  .login__botao {
+    width: 100%;
+    padding: 12px;
+    margin-top: 1rem;
+    background: var(--cor-botao);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .login__botao:hover {
+    background: var(--cor-botao-hover);
+  }
+  
+  p {
+    color: #ffcccb;
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 400px) {
+    .login {
+      padding: 1.5rem;
+    }
+  
+    .login__titulo {
+      font-size: 1.5rem;
+    }
+  
+    .login__input {
+      padding: 10px;
+    }
+  
+    .login__botao {
+      padding: 10px;
+    }
+  }

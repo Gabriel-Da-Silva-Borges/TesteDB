@@ -1,13 +1,10 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { RouterOutlet } from '@angular/router';
+import { SharedModule } from './core/modules/shared/shared.module';
 
 @Component({
   selector: 'app-root',
   imports: [
-    RouterOutlet,
-    FormsModule
-
+    SharedModule
   ],
   
   templateUrl: './app.component.html',

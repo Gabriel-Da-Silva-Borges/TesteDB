@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --cor-fundo: #ff6439;
+    --cor-fundo-secundario: #942e1e;
+    --cor-texto: #fff3e6;
+    --cor-botao: #e85d04;
+    --cor-botao-hover: #ff8500;
+    --cor-input: #ffe5d9;
+    --cor-placeholder: #b85c50;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    background: linear-gradient(135deg, var(--cor-fundo), var(--cor-fundo-secundario));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

@@ -1,17 +1,15 @@
 import { Component } from '@angular/core';
-import { Router, RouterOutlet } from '@angular/router';
+import { Router } from '@angular/router';
 import { LoginService } from '../../services/login.service';
-import { FormsModule } from '@angular/forms';
+import { SharedModule } from '../../core/modules/shared/shared.module';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   imports: [
-      RouterOutlet,
-      FormsModule
-  
+      SharedModule
     ],
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
   usuario = '';

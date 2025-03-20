@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DragoesService } from '../../services/dragoes.service';
 
 @Component({
   selector: 'app-lista-dragoes',
@@ -7,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './lista-dragoes.component.scss'
 })
 export class ListaDragoesComponent {
+  constructor(private dragoesService: DragoesService) {}
 
+  ngOnInit(): void{
+  }
 }
