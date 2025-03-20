@@ -1,0 +1,8 @@
+<div class="login">
+    <h2 class="login__titulo">Login</h2>
+    <input class="login__input" type="text" [(ngModel)]="usuario" placeholder="Usuário" />
+    <input class="login__input" type="password" [(ngModel)]="senha" placeholder="Senha" />
+    <button class="login__botao" (click)="login()">Entrar</button>
+    <p *ngIf="mensagemErro">{{ mensagemErro }}</p>
+</div>
+  
