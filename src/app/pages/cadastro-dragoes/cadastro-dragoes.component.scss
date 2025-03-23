@@ -44,33 +44,34 @@
     justify-content: space-between;
     margin-top: 20px;
 
-    .btn {
-      width: 48%;
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 16px;
-      transition: all 0.3s ease;
-    }
+  }
+  
+  &__botao {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
 
-    .btn-primary {
-      background: #ff7043;
-      color: white;
-    }
+  &__botao-primary {
+    background: #ff7043;
+    color: white;
+  }
 
-    .btn-primary:hover {
-      background: #e64a19;
-    }
+  &__botao-primary:hover {
+    background: #e64a19;
+  }
 
-    .btn-secondary {
-      background: #d32f2f;
-      color: white;
-    }
+  &__botao-secondary {
+    background: #d32f2f;
+    color: white;
+  }
 
-    .btn-secondary:hover {
-      background: #b71c1c;
-    }
+  &__botao-secondary:hover {
+    background: #b71c1c;
   }
 }
   
@@ -85,7 +86,7 @@
   
     &__botoes {
       display: unset;
-      .btn {
+      &__botao {
         width: 100%;
         margin-top: 10px;
       }

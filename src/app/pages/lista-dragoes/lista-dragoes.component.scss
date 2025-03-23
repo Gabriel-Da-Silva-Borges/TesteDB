@@ -6,15 +6,49 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-    h2 {
+    &__titulo {
         text-align: center;
         color: var(--cor-texto);
     }
 
-    table {
+    &__texto{
+        color: var(--cor-texto);
+    }
+
+    &__tabela {
         width: 100%;
         border-collapse: collapse;
         margin-top: 20px;
+    }
+    &__input {
+        width: 100%;
+        max-width: 125px;
+        padding: 5px;
+        border: 1px solid var(--cor-borda);
+        border-radius: 4px;
+    }
+
+    &__botao:hover {
+        opacity: 0.8;
+    }
+
+    &__botao {
+        background: var(--cor-botao);
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        margin: 2px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    &__coluna{
+        width: 160px;
+    }
+
+    &__acoes{
+        text-align: center !important;
     }
 
     th, td {
@@ -27,40 +61,6 @@
         background: var(--cor-fundo);
         color: var(--cor-texto);
     }
-
-    input {
-        width: 100%;
-        max-width: 125px;
-        padding: 5px;
-        border: 1px solid var(--cor-borda);
-        border-radius: 4px;
-    }
-
-    button {
-        border: none;
-        padding: 5px 10px;
-        margin: 2px;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 14px;
-    }
-
-    button:hover {
-        opacity: 0.8;
-    }
-
-    &__botao {
-        background: var(--cor-botao);
-        color: white;
-    }
-
-    &__coluna{
-        width: 160px;
-    }
-
-    &__acoes{
-        text-align: center !important;
-    }
 }
 
 
@@ -71,17 +71,17 @@
         height: 100vh;
         overflow: scroll;
 
-        table {
+        &__tabela {
             font-size: 14px;
-        }
-
-        th, td {
-            padding: 8px;
         }
 
         &__botao {
             font-size: 12px;
             padding: 5px;
+        }
+
+        th, td {
+            padding: 8px;
         }
     }    
 }
