@@ -1,1 +1,9 @@
-<p>detalhes-dragao works!</p>
+<div class="dragao" *ngIf="dragao">
+    <h2 class="dragao__titulo">{{ dragao.name }}</h2>
+    <div class="dragao__textos">
+        <p class="dragao__texto"><strong>Data de Criação:</strong> {{ dragao.createdAt | date:'dd/MM/yyyy' }}</p>
+        <p class="dragao__texto"><strong>Tipo:</strong> {{ dragao.type }}</p>
+    </div>
+    <button class="dragao__botao" (click)="voltar()">Voltar</button>
+</div>
+  

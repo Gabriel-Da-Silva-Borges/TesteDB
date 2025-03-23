@@ -1,1 +1,18 @@
-<p>cadastro-dragoes works!</p>
+<div class="dragao">
+    <h2 class="dragao__titulo">Cadastrar Novo Dragão</h2>
+  
+    <form class="dragao__formulario" (submit)="criaDragao()">
+      <label class="dragao__label" for="name">Nome:</label>
+      <input class="dragao__input" id="name" type="text" [(ngModel)]="dragao.name" [ngModelOptions]="{standalone: true}" placeholder="Nome do Dragão" required />
+  
+      <label class="dragao__label" for="type">Tipo:</label>
+      <input class="dragao__input" id="type" type="text" [(ngModel)]="dragao.type" [ngModelOptions]="{standalone: true}" placeholder="Tipo do Dragão" required />
+      <p class="dragao__erro" *ngIf="mensagemErro">{{ mensagemErro }}</p>
+  
+      <div class="dragao__botoes">
+          <button type="button" class="btn btn-secondary" (click)="voltar()">❌ Cancelar</button>
+          <button type="submit" class="btn btn-primary">📝 Cadastrar</button>
+      </div>
+    </form>
+  </div>
+  

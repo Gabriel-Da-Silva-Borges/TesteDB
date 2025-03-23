@@ -1,0 +1,67 @@
+.dragao {
+  max-width: 500px;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  &__titulo {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--cor-texto);
+    margin-bottom: 15px;
+  }
+
+  &__textos {
+    font-size: 18px;
+    color: var(--cor-texto);
+    margin-bottom: 10px;
+  }
+
+  &__texto {
+    font-size: 20px;
+    color: var(--cor-texto);
+    margin-bottom: 10px;
+    
+    strong {
+      color: var(--cor-texto);
+    }
+  }
+
+  &__botao {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: var(--cor-botao);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background: #e64a19;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .dragao {
+    width: 90%;
+    padding: 15px;
+  
+    &__botao {
+      width: 100%;
+      font-size: 14px;
+    }
+  } 
+}

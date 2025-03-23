@@ -1,1 +1,39 @@
-<p>lista-dragoes works!</p>
+<div class="dragao">
+    <h2>Lista de Dragões</h2>
+
+    <button class="dragao__botao" (click)="cadastroDragao()">➕ Criar Dragão</button>
+    <table>
+      <thead>
+        <tr>
+          <th>Data de Criação</th>
+          <th>Nome</th>
+          <th>Tipo</th>
+          <th  class="dragao__acoes">Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let dragao of dragoes">
+
+          <td>{{ dragao.createdAt | date:'dd/MM/yyyy' }}</td>
+  
+          <td class="dragao__coluna">
+            <input *ngIf="edicao[dragao.id]" [(ngModel)]="dragao.name" />
+            <span *ngIf="!edicao[dragao.id]">{{ dragao.name }}</span>
+          </td>
+  
+          <td class="dragao__coluna">
+            <input *ngIf="edicao[dragao.id]" [(ngModel)]="dragao.type" />
+            <span *ngIf="!edicao[dragao.id]">{{ dragao.type }}</span>
+          </td> 
+           
+          <td>
+            <button *ngIf="!edicao[dragao.id]" class="dragao__botao" (click)="habilitaEditar(dragao.id)">✏️ Editar</button>
+            <button *ngIf="edicao[dragao.id]" (click)="salvarDragao(dragao)">💾 Salvar</button>
+            <button class="dragao__botao" (click)="visualizarDragao(dragao.id)"> 🔎 Detalhes</button>
+            <button class="dragao__botao" (click)="excluirDragao(dragao.id)">🗑️ Remover</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
